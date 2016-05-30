@@ -1,0 +1,109 @@
+<html>
+<head>
+	<script type="text/javascript" src="jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="seaccount.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<div id="container">
+		<div ="renderContainer">
+			<input type="button" value="Test" onclick="init();">
+			<input type="submit" value="Save">
+			<input type="reset">
+			<div id="renderTarget">
+			
+			</div>
+			<div id="textTarget">
+			
+			</div>
+		</div>
+
+		<div id="formContainer">
+			<form id="inputForm">
+				<br /><br />
+			
+				<fieldset>
+					<legend>Account Settings</legend><br />
+					
+					
+					<input type="text" name="useridInput" title="The user id, which has been assigned by SE network to your account."> Stack Exchange User Id<br /><br />
+				
+					<input type="radio" name="displaySize" value="long"  checked="checked"> Display full<br />
+					<input type="radio" name="displaySize" value="short"> Display short<br /><br />
+
+				</fieldset><br /><br />
+
+				<fieldset>
+					<legend>Basic Profile Information</legend><br />
+					
+					<!--sesettings.html:14 display_name : Jankapunkt-->
+					<input type="checkbox" name="display_name" value="1"  checked="checked"> Display user name<br /><br />
+					
+					<!-- sesettings.html:14 account_id : 3724603 -->
+					<input type="checkbox" name="account_id" value="1"  checked="checked"> Display account id<br /><br />
+					
+					<!-- sesettings.html:14 user_id : 3098783 -->
+					<input type="checkbox" name="user_id" value="1"  checked="checked"> Display user id<br /><br />
+					
+					<!-- sesettings.html:14 profile_image : https://www.gravatar.com/avatar/8a4af51b5552cf0aaaed3d491c2520b3?s=128&d=identicon&r=PG -->
+					<input type="checkbox" name="profile_image" value="1"  checked="checked"> Display profile image<br /><br />
+
+					<!-- sesettings.html:14 location : Bremen-->
+					<input type="checkbox" name="location" value="1"  checked="checked"> Display location info<br /><br />
+					
+					<!-- sesettings.html:14 link : http://stackoverflow.com/users/3098783/jankapunkt -->
+					<input type="checkbox" name="link" value="1"  checked="checked"> Display profile link<br /><br />
+					
+					<!-- sesettings.html:14 website_url : http://www.jankuester.com -->
+					<input type="checkbox" name="website_url" value="1"  checked="checked"> Display private web link to your homepage<br /><br />
+					
+				</fieldset><br /><br />
+				
+				<fieldset>
+					<legend>Badge Information</legend><br />
+					
+					<!-- sesettings.html:14 badge_counts : [object Object] -->
+					<input type="checkbox" name="badge_counts" value="1"  checked="checked"> Display badge counts<br /><br />
+					
+				</fieldset><br /><br />
+				
+				<fieldset>
+					<legend>Temporal Information</legend><br />
+				
+					<!-- sesettings.html:14 creation_date : 1386927163 -->
+					<input type="checkbox" name="creation_date" value="1"  checked="checked"> Display creation date (aka member since)<br /><br />
+					
+					<!-- sesettings.html:14 last_modified_date : 1459764959 -->
+					<input type="checkbox" name="last_modified_date" value="1"  checked="checked"> Display last modified since<br /><br />
+					
+					<!-- sesettings.html:14 last_access_date : 1462884920 -->
+					<input type="checkbox" name="last_access_date" value="1"  checked="checked"> Display last accessed<br /><br />
+				</fieldset><br /><br />
+				
+				<fieldset>
+					<legend>Reputation Settings</legend><br />
+					<!-- sesettings.html:14 reputation : 168 -->
+					<input type="checkbox" name="reputation" value="1"  checked="checked"> Display reputation<br /><br />
+					
+					<!-- sesettings.html:14 reputation_change_year : 150 -->
+					<input type="checkbox" name="reputation_change_year" value="1"  checked="checked"> Display reputation change for this year<br /><br />
+					
+					<!-- sesettings.html:14 reputation_change_quarter : 70 -->
+					<input type="checkbox" name="reputation_change_quarter" value="1"  checked="checked"> Display reputation change for this quarter<br /><br />
+					
+					<!-- sesettings.html:14 reputation_change_month : 31-->
+					<input type="checkbox" name="reputation_change_month" value="1"  checked="checked"> Display reputation change for this month<br /><br />
+					
+					<!-- sesettings.html:14 reputation_change_week : 0 -->
+					<input type="checkbox" name="reputation_change_week" value="1"  checked="checked"> Display reputation change for this week<br /><br />
+					
+					<!-- sesettings.html:14 reputation_change_day : 0 -->
+					<input type="checkbox" name="reputation_change_day" value="1"  checked="checked"> Display reputation change for this day<br /><br />
+
+				</fieldset><br /><br />
+
+			</form>
+		</div>
+	</div>
+</body>
+</html>
